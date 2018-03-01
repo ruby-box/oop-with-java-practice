@@ -1,6 +1,7 @@
 import static org.assertj.core.api.Assertions.*;
 import org.junit.Before;
 import org.junit.Test;
+import tdd.calculator.Calculator;
 
 public class CalculatorTest {
     Calculator calculator;

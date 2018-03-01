@@ -1,28 +1,23 @@
 import org.junit.Before;
 import org.junit.Test;
+import tdd.calculator.StringCalculator;
 
 import static org.assertj.core.api.Assertions.*;
 
 public class StringCalculatorTest {
-    StringCalculator stringCalculator;
-
     @Before
     public void setup() {
-        stringCalculator = new StringCalculator();
     }
 
     @Test
-    public void removeSpaceFromInputString() {
-        assertThat(stringCalculator.removeSpaceFromInputString(" 2 + 3 * 2")).isEqualTo("2+3*2");
+    public void calculate() {
+        assertThat(new StringCalculator("2 + 3 * 2").calculate()).isEqualTo(10);
+        assertThat(new StringCalculator("3 / 2 + 1").calculate()).isEqualTo(2);
     }
 
     @Test
-    public void computeArithmeticOperation() {
-        assertThat(stringCalculator.computeArithmeticOperation("2 + 3 * 2")).isEqualTo(10);
-    }
-
-    public void splitStringByCharacter() {
-        assertThat(stringCalculator.splitStringByCharacter("2 + 3 * 2")).containsExactly();
+    public void calculate2() {
+        assertThat(new StringCalculator("2 + 13 * 2 - 10 / 4").calculate()).isEqualTo(5);
     }
 
     public void convertStringToNumber() {
