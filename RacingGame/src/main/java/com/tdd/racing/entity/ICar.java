@@ -1,4 +1,4 @@
 package com.tdd.racing.entity;
 
-public interface Car {
+public interface ICar {
 }

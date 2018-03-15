@@ -3,20 +3,20 @@ package com.tdd.racing.service.impl;
 import com.tdd.racing.entity.RacingGameParticipants;
 import com.tdd.racing.entity.RacingGameRoundResultHistory;
 import com.tdd.racing.entity.impl.RacingCar;
-import com.tdd.racing.service.GameRound;
+import com.tdd.racing.service.IGameRound;
+
+import java.util.List;
 
 /***
  * 레이싱 게임 라운드 클래스
  */
-public class RacingGameRound implements GameRound {
+public class RacingGameRound implements IGameRound {
     private int roundNumber;    //라운드 번호(PK)
-    private RacingGameParticipants participants;  //참여자 리스트
     private RacingGameRoundResultHistory history;
 
-    public RacingGameRound(int roundNumber, RacingGameParticipants participantedCar) {
+    public RacingGameRound(int roundNumber, List<RacingCar> carList) {
         this.roundNumber = roundNumber;
-        this.participants = participantedCar;
-        this.history = new RacingGameRoundResultHistory(this.participants.getCarCount(), roundNumber);
+        this.history = new RacingGameRoundResultHistory(carList.size(), roundNumber);
     }
 
     public RacingGameRoundResultHistory getHistory() {
@@ -31,6 +31,7 @@ public class RacingGameRound implements GameRound {
         if(car.canMove()) {
             car.move();
         }
+
         this.history.saveCarLocation(car.getNumber(), car.getLocation());
     }
 
@@ -38,8 +39,8 @@ public class RacingGameRound implements GameRound {
      * 라운드 시작
      */
     @Override
-    public void start() {
-        for( RacingCar car : this.participants.getCarList() ) {
+    public void start(List<RacingCar> carList) {
+        for( RacingCar car : carList ) {
             playRound(car);
         }
     }

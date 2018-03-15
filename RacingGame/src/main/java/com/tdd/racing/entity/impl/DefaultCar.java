@@ -1,8 +1,8 @@
 package com.tdd.racing.entity.impl;
 
-import com.tdd.racing.entity.Car;
+import com.tdd.racing.entity.ICar;
 
-public class DefaultCar implements Car {
+public class DefaultCar implements ICar {
     protected int speed; //속도
     private int number;     //차 번호(PK)
 

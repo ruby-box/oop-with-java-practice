@@ -1,12 +1,12 @@
 package com.tdd.racing.service.impl;
 
 import com.tdd.racing.entity.RacingGameComponent;
-import com.tdd.racing.service.Game;
+import com.tdd.racing.service.IGame;
 
 /***
  * 레이싱 게임 클래스
  */
-public class RacingGame implements Game {
+public class RacingGame implements IGame {
     private RacingGameComponent component;  //게임에서 필요한 요소 정의(차, 라운드)
 
     public RacingGame(int carCount, int totalRound) {
@@ -23,7 +23,7 @@ public class RacingGame implements Game {
     @Override
     public void start() {
         for(RacingGameRound round : this.component.getRoundList()) {
-            round.start();
+            round.start(this.component.getParticipantedCar().getCarList());
         }
     }
 }
