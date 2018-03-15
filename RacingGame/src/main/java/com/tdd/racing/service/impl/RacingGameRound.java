@@ -19,6 +19,10 @@ public class RacingGameRound implements GameRound {
         this.history = new RacingGameRoundResultHistory(this.participants.getCarCount(), roundNumber);
     }
 
+    public RacingGameRoundResultHistory getHistory() {
+        return this.history;
+    }
+
     /***
      * 라운드 플레이중
      * @param car
@@ -38,14 +42,5 @@ public class RacingGameRound implements GameRound {
         for( RacingCar car : this.participants.getCarList() ) {
             playRound(car);
         }
-    }
-
-    /***
-     * 종료시, 히스토리 저장
-     * @return
-     */
-    @Override
-    public RacingGameRoundResultHistory end() {
-        return this.history;
     }
 }

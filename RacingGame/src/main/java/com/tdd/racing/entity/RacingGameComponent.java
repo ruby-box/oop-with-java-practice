@@ -14,14 +14,11 @@ public class RacingGameComponent {
 
     private RacingGameParticipants participants;    //참여 레이싱차
     private List<RacingGameRound> roundList;            //라운드 정보
-    private List<RacingGameRoundResultHistory> roundHistoryList;  //라운드 히스토리 저장
 
     public RacingGameComponent(int carCount, int totalRound) {
         this.carCount = carCount;
         this.totalRound = totalRound;
-        this.roundHistoryList = new ArrayList<>();
         this.participants = new RacingGameParticipants(carCount);
-
         prepareRound(totalRound);
     }
 
@@ -33,19 +30,15 @@ public class RacingGameComponent {
         return this.roundList;
     }
 
+    /***
+     * 라운드 준비
+     * @param totalRound
+     */
     private void prepareRound(int totalRound) {
         roundList = new ArrayList<>();
 
         for(int i=0; i<totalRound; i++) {
             roundList.add(new RacingGameRound(i, participants));
         }
-    }
-
-    public void addRoundHistory(RacingGameRoundResultHistory roundHistory) {
-        this.roundHistoryList.add(roundHistory);
-    }
-
-    public List<RacingGameRoundResultHistory> getRoundHistoryList() {
-        return this.roundHistoryList;
     }
 }

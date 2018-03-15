@@ -24,7 +24,6 @@ public class RacingGame implements Game {
     public void start() {
         for(RacingGameRound round : this.component.getRoundList()) {
             round.start();
-            this.component.addRoundHistory(round.end());
         }
     }
 }

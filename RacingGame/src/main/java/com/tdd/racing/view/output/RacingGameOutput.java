@@ -3,6 +3,7 @@ package com.tdd.racing.view.output;
 import com.tdd.racing.entity.RacingGameComponent;
 import com.tdd.racing.entity.RacingGameRoundResultHistory;
 import com.tdd.racing.service.impl.RacingGame;
+import com.tdd.racing.service.impl.RacingGameRound;
 
 public class RacingGameOutput {
     private static final char charShape = '-';
@@ -15,8 +16,8 @@ public class RacingGameOutput {
         System.out.println("실행결과");
 
         RacingGameComponent component = game.getComponent();
-        for(RacingGameRoundResultHistory history : component.getRoundHistoryList()) {
-            printRacingGameHistory(history);
+        for(RacingGameRound round : component.getRoundList()) {
+            printRacingGameHistory(round.getHistory());
         }
 
     }
