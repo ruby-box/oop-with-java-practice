@@ -1,0 +1,47 @@
+target
+*~
+*.log
+.git
+.svn
+*.bak
+
+# Eclipse project files
+.classpath
+.project
+.settings
+
+# generated files
+bin/
+gen/
+
+# Java class files
+*.class
+
+#Gradle
+.gradletasknamecache
+.gradle/
+build/
+bin/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
