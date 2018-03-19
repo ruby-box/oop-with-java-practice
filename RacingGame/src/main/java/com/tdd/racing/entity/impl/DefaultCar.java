@@ -16,19 +16,12 @@ public class DefaultCar implements ICar {
         this.speed = speed;
     }
 
-    public double getSpeed() {
+    public int getSpeed() {
         return this.speed;
-    }
-
-    public void setSpeed(int speed) {
-        this.speed = speed;
     }
 
     public int getNumber() {
         return this.number;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
-    }
 }

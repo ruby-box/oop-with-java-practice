@@ -11,7 +11,7 @@ public class RacingCar extends DefaultCar {
     }
 
     public void move() {
-        this.location += this.speed;
+        this.location += getSpeed();
     }
 
     /***

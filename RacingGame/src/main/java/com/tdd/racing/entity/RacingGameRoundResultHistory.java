@@ -16,10 +16,6 @@ public class RacingGameRoundResultHistory {
         this.carLocation[carNumber] = location;
     }
 
-    public int getRoundNumber() {
-        return this.roundNumber;
-    }
-
     public int[] getCarLocation() {
         return this.carLocation;
     }
