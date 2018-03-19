@@ -109,3 +109,5 @@ public class RacingGame {
   }
 }
 ```
+
+> 레이싱 게임 UML [이동](https://www.draw.io/?state=%7B%22ids%22:%5B%221CFZINbjVneCibnjpzMsNQP5EoNYEBhth%22%5D,%22action%22:%22open%22,%22userId%22:%22113946954000195770550%22%7D#G1CFZINbjVneCibnjpzMsNQP5EoNYEBhth)
