@@ -18,7 +18,7 @@
          
       (인터페이스 설계)                      (구현코드 설계)
 
-#TDD의 목적
+# TDD의 목적
 + 자체 버그 검출
     - 테스트에 대한 자동화한다.
 + 소스 코드의 품질 저하 방지
@@ -106,5 +106,5 @@ TDD는 테스트를 수동이 아니라 **자동**으로 돌아가는 코드로 
 
 
 ###참고 URL
-[고려하면 좋은 URL](https://medium.com/@rinae/tdd-test-driven-development-%EB%A5%BC-%EC%97%B0%EC%8A%B5%ED%95%98%EB%A9%B4%EC%84%9C-%EC%B0%B8%EA%B3%A0%ED%95%98%EA%B8%B0-%EC%A2%8B%EC%9D%80-%ED%8C%81-10%EA%B0%80%EC%A7%80-d8cf46ae1806)
-[TDD 활용법](http://www.sw-eng.kr/member/customer/Webzine/BoardView.do?boardId=00000000000000035253&currPage=1&searchPrefaceId=00000000000000020135&titOrder=&writeOrder=&regDtOrder=&searchCondition=TOT&searchKeyword=)
+* [고려하면 좋은 URL](https://medium.com/@rinae/tdd-test-driven-development-%EB%A5%BC-%EC%97%B0%EC%8A%B5%ED%95%98%EB%A9%B4%EC%84%9C-%EC%B0%B8%EA%B3%A0%ED%95%98%EA%B8%B0-%EC%A2%8B%EC%9D%80-%ED%8C%81-10%EA%B0%80%EC%A7%80-d8cf46ae1806)
+* [TDD 활용법](http://www.sw-eng.kr/member/customer/Webzine/BoardView.do?boardId=00000000000000035253&currPage=1&searchPrefaceId=00000000000000020135&titOrder=&writeOrder=&regDtOrder=&searchCondition=TOT&searchKeyword=)
