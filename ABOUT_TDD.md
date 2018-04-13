@@ -51,7 +51,7 @@
 
 # TDD 훈련법
 ### 1. 명확한 목표가 필요하다
-![사진]('./test/testcase1.jpg')
+![사진](/test/testcase1.jpg)
 [출처](http://langgeek.tistory.com/entry/Effective-Unit-Testing-Chapter-1-%EC%A2%8B%EC%9D%80-%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9D%98-%EC%95%BD%EC%86%8D)
 
 예를들면, ABC 샵에서 라면을 사는데 가장 싼 가격에 사는 프로그램을 만든다.
