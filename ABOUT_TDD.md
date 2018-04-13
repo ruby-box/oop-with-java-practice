@@ -4,7 +4,7 @@
 
 
 
-# TDD(Test-Drive-Develop)
+# TDD(Test-Driven-Develop)
 - 요구사항의 테스트 요건을 먼저 고려한다.
 ### 사전 설계
 * 테스트를 검증단계의 목적으로 사용한다.
