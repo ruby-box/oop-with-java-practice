@@ -1,6 +1,5 @@
 package com.tdd.racing.service.impl;
 
-import com.tdd.racing.entity.RacingGameParticipants;
 import com.tdd.racing.entity.RacingGameRoundResultHistory;
 import com.tdd.racing.entity.impl.RacingCar;
 import com.tdd.racing.service.IGameRound;

@@ -7,9 +7,16 @@ public class RacingGameInput extends DefaultInput{
         return carCount;
     }
 
+    public static String inputCarsName() {
+        System.out.println("자동차 이름을 입력해주세요");
+        String carsName = inputString();
+        return carsName;
+    }
+
     public static int inputGameRound() {
         System.out.println("시도할 회수는 몇 회 인가요?");
         int gameRound = inputNumber();
         return gameRound;
     }
+
 }
