@@ -1,4 +1,4 @@
-![사진](/blackjack.png)
+![사진](./blackjack.png)
 
 TDD요구사항
 
